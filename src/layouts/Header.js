@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div>
+    <div className="flex flex-row">
       <h1>FRIENDS DATABASE</h1>
       <NavLink to="/login"> LOGIN. </NavLink>
       <NavLink to="/friendlist"> FRIENDLIST. </NavLink>
