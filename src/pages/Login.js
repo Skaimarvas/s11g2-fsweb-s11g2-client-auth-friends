@@ -13,7 +13,10 @@ export default function Login() {
     console.log("DATA", data);
     axios
       .post("http://localhost:9000/api/login", data)
-      .then((res) => console.log(res.data))
+      .then((res) => {
+        console.log(res.data);
+        localStorage.setItem("token", res.data.token);
+      })
       .catch((err) => console.log(err));
   };
 
