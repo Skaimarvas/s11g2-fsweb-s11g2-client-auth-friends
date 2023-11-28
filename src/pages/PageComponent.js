@@ -4,6 +4,7 @@ import Login from "./Login";
 import FriendsList from "./FriendsList";
 import AddFriend from "./AddFriend";
 import Logout from "./Logout";
+import ProtectedPage from "./ProtectedPage";
 
 export default function PageComponent() {
   return (
@@ -12,14 +13,24 @@ export default function PageComponent() {
         <Route path="/login" exact>
           <Login />
         </Route>
+
         <Route path="/friendlist" exact>
-          <FriendsList />
+          <ProtectedPage>
+            <FriendsList />
+          </ProtectedPage>
         </Route>
         <Route path="/addfriend" exact>
-          <AddFriend />
+          <ProtectedPage>
+            <AddFriend />
+          </ProtectedPage>
         </Route>
         <Route path="/logout" exact>
-          <Logout />
+          <ProtectedPage>
+            <Logout />
+          </ProtectedPage>
+        </Route>
+        <Route path="*">
+          <h1> 404 Not Found Page </h1>
         </Route>
       </Switch>
     </div>
