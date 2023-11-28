@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <div>
       <NavLink to="/login"> LOGIN. </NavLink>
-      <NavLink to="/"> FRIENDLIST. </NavLink>
+      <NavLink to="/friendlist"> FRIENDLIST. </NavLink>
       <NavLink to="/"> ADDFRIEND. </NavLink>
       <NavLink to="/"> LOGOUT. </NavLink>
     </div>

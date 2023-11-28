@@ -1,6 +1,7 @@
 import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useHistory } from "react-router-dom";
 
 export default function Login() {
   const {
@@ -9,6 +10,8 @@ export default function Login() {
     formState: { errors },
   } = useForm();
 
+  const history = useHistory();
+
   const submitHandler = (data) => {
     console.log("DATA", data);
     axios
@@ -16,6 +19,7 @@ export default function Login() {
       .then((res) => {
         console.log(res.data);
         localStorage.setItem("token", res.data.token);
+        history.push("/friendlist");
       })
       .catch((err) => console.log(err));
   };

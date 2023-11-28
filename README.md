@@ -43,14 +43,14 @@ Tüm karakter nesneleri aşağıdaki biçimdedir:
 
 - [x] Örnekteki login sayfası gibi [mockup](./designs/login_mockup.png) bir login bileşeni oluşturun.
 - [x] `App.js` içine, `/` ya da `/login` ziyaret edildiğinde bu bileşeni gösteren bir route ekleyin
-- [ ] Login formu gönderildiğinde, döndürülen tokeni localStorage e kaydedin ve sayfayı FriendsList sayfasına yönlendirin
+- [x] Login formu gönderildiğinde, döndürülen tokeni localStorage e kaydedin ve sayfayı FriendsList sayfasına yönlendirin
 
 #### FriendsList bileşenini oluşturun
 
 - [ ] Örnektesi `FriendsList` [mockup](./designs/friendslist_mockup.png) gibi bir bileşen oluşturun.
 - [ ] Bileşen bağlandığında, tüm karakterleri gönderen bir API call oluşturun. Bunun korumalı bir route olduğunu unutmayın.
-- [ ] `App.js` içinde, `/friends` ziyaret edildiğinde bu bileşeni görüntüleyen bir route ekleyin
-- [ ] Login bileşeninize, oluşturduğunuz `FriendsList` bileşenine yönlendirme kabiliyeti ekleyin.
+- [] `App.js` içinde, `/friends` ziyaret edildiğinde bu bileşeni görüntüleyen bir route ekleyin
+- [] Login bileşeninize, oluşturduğunuz `FriendsList` bileşenine yönlendirme kabiliyeti ekleyin.
 
 #### addFriends bileşeni oluşturun
 
