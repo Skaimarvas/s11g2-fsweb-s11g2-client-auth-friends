@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { axiosRequest } from "../api";
+import { useParams, Link } from "react-router-dom";
 
 export default function FriendsList() {
   const [friends, setFriends] = useState();
@@ -24,8 +25,10 @@ export default function FriendsList() {
             <div key={friend.id}>
               <div>
                 {" "}
-                <p> {friend.name} </p>
-                <p> {friend.email} </p>{" "}
+                <Link to={`/friendlist/${friend.id} `}>
+                  <p> {friend.name} </p>
+                  <p> {friend.email} </p>{" "}
+                </Link>
               </div>
             </div>
           ))}

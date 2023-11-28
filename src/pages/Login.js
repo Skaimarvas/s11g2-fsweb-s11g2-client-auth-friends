@@ -19,7 +19,9 @@ export default function Login() {
       .then((res) => {
         console.log(res.data);
         localStorage.setItem("token", res.data.token);
-        history.push("/friendlist");
+        setTimeout(() => {
+          history.push("/friendlist");
+        }, 1000);
       })
       .catch((err) => console.log(err));
   };

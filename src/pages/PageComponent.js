@@ -5,6 +5,7 @@ import FriendsList from "./FriendsList";
 import AddFriend from "./AddFriend";
 import Logout from "./Logout";
 import ProtectedPage from "./ProtectedPage";
+import Characters from "./Characters";
 
 export default function PageComponent() {
   return (
@@ -17,6 +18,11 @@ export default function PageComponent() {
         <Route path="/friendlist" exact>
           <ProtectedPage>
             <FriendsList />
+          </ProtectedPage>
+        </Route>
+        <Route path="/friendlist/:id">
+          <ProtectedPage>
+            <Characters />
           </ProtectedPage>
         </Route>
         <Route path="/addfriend" exact>

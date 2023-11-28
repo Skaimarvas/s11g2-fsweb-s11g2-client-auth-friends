@@ -68,10 +68,10 @@ Tüm karakter nesneleri aşağıdaki biçimdedir:
 
 #### /friends ve /friends/add routlarını korumak
 
-- [ ] Eğer local storage a kayıtlı bir token yoksa bu url ler ziyaret edildiğinde login routeuna sayfa yönlendirilsin.
+- [x] Eğer local storage a kayıtlı bir token yoksa bu url ler ziyaret edildiğinde login routeuna sayfa yönlendirilsin.
 
 ### Görev 3: Esnek görevler
 
-- [ ] axiosWithAuth kullanarak korumalı uç noktalara erişmeyi deneyin.
-- [ ] Karakterlerin bilgilerini göstermeye yarayan bir route oluşturun. Karakter id sini `useParams` kullanarak alın.
+- [x] axiosWithAuth kullanarak korumalı uç noktalara erişmeyi deneyin.
+- [x] Karakterlerin bilgilerini göstermeye yarayan bir route oluşturun. Karakter id sini `useParams` kullanarak alın.
 - [ ] Uygulamayı stilleyin.

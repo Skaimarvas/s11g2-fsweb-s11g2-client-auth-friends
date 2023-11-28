@@ -22,7 +22,7 @@ export default function AddFriend() {
       .post("/friends", dataInfo)
       .then((res) => {
         console.log("ADDFRIEND RESPONSE", res);
-        setTimeout(history.push("/friendlist"), 1000);
+        setTimeout(history.push("/friendlist"), 3000);
       })
       .catch((err) => console.log("ADDFRIEND ERROR", err.response.data.error));
   };
