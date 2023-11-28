@@ -7,7 +7,7 @@ export default function Header() {
       <h1>FRIENDS DATABASE</h1>
       <NavLink to="/login"> LOGIN. </NavLink>
       <NavLink to="/friendlist"> FRIENDLIST. </NavLink>
-      <NavLink to="/"> ADDFRIEND. </NavLink>
+      <NavLink to="/addfriend"> ADDFRIEND. </NavLink>
       <NavLink to="/"> LOGOUT. </NavLink>
     </div>
   );
