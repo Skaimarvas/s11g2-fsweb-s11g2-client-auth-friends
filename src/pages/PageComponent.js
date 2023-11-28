@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Login from "./Login";
 import FriendsList from "./FriendsList";
 import AddFriend from "./AddFriend";
+import Logout from "./Logout";
 
 export default function PageComponent() {
   return (
@@ -16,6 +17,9 @@ export default function PageComponent() {
         </Route>
         <Route path="/addfriend" exact>
           <AddFriend />
+        </Route>
+        <Route path="/logout" exact>
+          <Logout />
         </Route>
       </Switch>
     </div>
