@@ -27,12 +27,15 @@ export default function Login() {
   };
 
   return (
-    <div>
-      <h2>LOGIN</h2>
-      <div>
-        <form onSubmit={handleSubmit(submitHandler)}>
+    <div className="flex flex-col items-center mt-10">
+      <h2 className="text-3xl font-bold">LOGIN</h2>
+      <div className="flex flex-col py-0 w-1/2">
+        <form
+          onSubmit={handleSubmit(submitHandler)}
+          className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        >
           <div>
-            <label>
+            <label className=" block text-gray-700 text-sm font-bold mb-2">
               <div>
                 <span>USERNAME</span>
               </div>
@@ -41,13 +44,14 @@ export default function Login() {
                   name="username"
                   type="text"
                   {...register("username", { required: true })}
+                  className="bg-black shadow appearance-none border rounded  py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 />
                 {errors.username && <p>Username is required</p>}
               </div>
             </label>
           </div>
           <div>
-            <label>
+            <label className="block text-gray-700 text-sm font-bold mb-2">
               <div>
                 <span>PASSWORD</span>
               </div>
@@ -56,13 +60,20 @@ export default function Login() {
                   name="password"
                   type="password"
                   {...register("password", { required: true })}
+                  className="bg-black shadow appearance-none border rounded  py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 />
                 {errors.password && <p>Password is required</p>}
               </div>
             </label>{" "}
           </div>
           <div>
-            <button type="submit"> SUBMIT </button>
+            <button
+              type="submit"
+              className="bg-black hover:bg-black-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            >
+              {" "}
+              SUBMIT{" "}
+            </button>
           </div>
         </form>
       </div>

@@ -18,10 +18,19 @@ export default function Logout() {
   };
 
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center mt-10">
       Çıkış yapmak istediğinizden emin misiniz?
-      <button onClick={() => logoutHandler()}>Evet</button>
-      <button>Hayır</button>
+      <div className="flex justify-evenly mt-10 ">
+        <button
+          onClick={() => logoutHandler()}
+          className="bg-black hover:bg-black-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        >
+          Evet
+        </button>
+        <button className="bg-black hover:bg-black-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          Hayır
+        </button>
+      </div>
     </div>
   );
 }

@@ -74,4 +74,4 @@ Tüm karakter nesneleri aşağıdaki biçimdedir:
 
 - [x] axiosWithAuth kullanarak korumalı uç noktalara erişmeyi deneyin.
 - [x] Karakterlerin bilgilerini göstermeye yarayan bir route oluşturun. Karakter id sini `useParams` kullanarak alın.
-- [ ] Uygulamayı stilleyin.
+- [x] Uygulamayı stilleyin.
